@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+class Animal {
+    public:
+    int height ;
+    
+    
+    
+    // void Bark () {
+    //     cout<<"Dog hoga to bark krega"<<endl ;
+    // }
+
+   int getHeight(){
+        return height;
+    }
+   int setHeight(int h){
+        height = h;
+    }
+    
+};
+
+int main () {
+    Animal Dog ;
+    cout<<"Dog ki height"<< Dog.getHeight()<<"  ";
+    Dog.setHeight(15);
+    cout<< Dog.getHeight();
+    
+    return 0;
+    
+}
